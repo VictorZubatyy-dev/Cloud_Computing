@@ -96,7 +96,7 @@ function AddItemForm({ onNewItem }) {
                     value={newItem}
                     onChange={e => setNewItem(e.target.value)}
                     type="text"
-                    placeholder="New Item"
+                    placeholder="Insert Task ..."
                     aria-describedby="basic-addon1"
                 />
                 <InputGroup.Append>
@@ -143,7 +143,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                     <Button
                         className="toggles"
                         size="sm"
-                        variant="link"
+                       variant="link"
                         onClick={toggleCompletion}
                         aria-label={
                             item.completed
